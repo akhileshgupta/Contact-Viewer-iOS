@@ -1,0 +1,56 @@
+<project name="Contact-Viewer">
+   
+    <property name="project.dir" value="${basedir}" />
+    <property name="project.name" value="Contact-Viewer-iOS" />
+    <property name="target.release" value="&quot;Contacts&quot;" />
+    <property name="sdk" value="iphoneos5.0" />
+    <property name="configuration" value="Release" />
+    <property name="install_path" value="${basedir}/artifacts" />
+    <property name="action" value="install" />
+
+    <property environment="env"/>
+    <property name="embedProfile" value="${env.cvEmbedProfile}"/>
+    
+    <target name="all">
+        <antcall target="clean"/>
+        <antcall target="disableLogging"/>
+        <antcall target="xcodebuild"/>
+        <antcall target="generateIPA"/>
+    </target>
+
+    <!-- clean -->
+    <target name="clean">
+        <delete dir="artifacts"/>
+    </target>
+
+    <target name="disableLogging">
+        <exec executable="/usr/libexec/PlistBuddy">
+          <arg value="-c"/>
+          <arg value="Delete :Plugins:com.phonegap.debugconsolen"/>
+          <arg value="Contact-Viewer-iOS/PhoneGap.plist"/>
+        </exec> 
+    </target>
+
+    <!-- compile -->
+    <target name="xcodebuild">
+        <property name="action" value="build"/>
+        <echo>${action}ing ${project.name} for SDK ${sdk}</echo>
+
+        <exec executable="xcodebuild" failonerror="true" logError="true">
+            <arg line="-project ${project.dir}/${project.name}.xcodeproj -target ${target.release} -configuration ${configuration} -sdk ${sdk} INSTALL_ROOT=${install_path} ${action}"/>
+        </exec>
+    </target>
+
+    <target name="generateIPA" description="Generate the IPA file after building" >
+        <copy file="${user.home}/Library/MobileDevice/Provisioning Profiles/${embedProfile}" todir="${basedir}"/>
+        
+        <exec executable="xcrun" failOnError="true">
+            <arg line="-sdk ${sdk} PackageApplication " />
+            <arg line="-v &quot;${install_path}/Applications/Contacts.app&quot; "/>
+            <arg line="-o &quot;${install_path}/Contact-Viewer.ipa&quot; "  />
+            <arg line="--sign &quot;iPhone Distribution&quot;" />
+            <arg line="--embed &quot;${basedir}/${embedProfile}&quot; " />
+        </exec>
+    </target>
+
+</project>
