@@ -42,7 +42,7 @@
     </target>
 
     <target name="generateIPA" description="Generate the IPA file after building" >
-        <copy file="${user.home}/Library/MobileDevice/Provisioning Profiles/${embedProfile}" todir="${basedir}"/>
+        <copy file="${user.home}/Library/MobileDevice/Provisioning Profiles/${embedProfile}.mobileprovision" todir="${basedir}"/>
         
         <exec executable="xcrun" failOnError="true">
             <arg line="-sdk ${sdk} PackageApplication " />
