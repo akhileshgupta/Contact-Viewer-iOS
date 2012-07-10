@@ -18,11 +18,8 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
-		<string>agupta-ltm2</string>
-		<string>localhost</string>
-		<string>*.googleapis.com</string>
-		<string>*.gstatic.com</string>
 		<string>maps.google.com</string>
+		<string>maps.googleapis.com</string>
 		<string>*.force.com</string>
 		<string>*.salesforce.com</string>
 	</array>

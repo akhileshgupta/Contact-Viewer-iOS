@@ -2,7 +2,7 @@
    
     <property name="project.dir" value="${basedir}" />
     <property name="project.name" value="Contact-Viewer-iOS" />
-    <property name="target.release" value="&quot;Contacts&quot;" />
+    <property name="target.release" value="&quot;Contacts Release&quot;" />
     <property name="sdk" value="iphoneos5.0" />
     <property name="configuration" value="Release" />
     <property name="install_path" value="${basedir}/artifacts" />
