@@ -10,10 +10,12 @@
 
     <property environment="env"/>
     <property name="embedProfile" value="${env.cvEmbedProfile}"/>
+    <property name="testFlightToken" value="${env.cvTestFlightToken}"/>
     
     <target name="all">
         <antcall target="clean"/>
         <antcall target="disableLogging"/>
+        <antcall target="replaceTokens"/>
         <antcall target="xcodebuild"/>
         <antcall target="generateIPA"/>
     </target>
@@ -29,6 +31,13 @@
           <arg value="Delete :Plugins:com.phonegap.debugconsolen"/>
           <arg value="Contact-Viewer-iOS/PhoneGap.plist"/>
         </exec> 
+    </target>
+
+    <target name="replaceTokens">
+        <replace file="${project.dir}/${project.name}/Classes/AppDelegate.m"
+                 summary="true"
+                 token="${TEST_FLIGHT_TOKEN}"
+                 value="${testFlightToken}"/>
     </target>
 
     <!-- compile -->

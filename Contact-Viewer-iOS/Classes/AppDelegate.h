@@ -26,6 +26,7 @@
 
 
 #import "SalesforceHybridSDK/SFContainerAppDelegate.h"
+#import "TestFlight.h"
 
 @interface AppDelegate : SFContainerAppDelegate  {
 

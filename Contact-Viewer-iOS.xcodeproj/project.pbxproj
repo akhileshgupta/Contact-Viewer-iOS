@@ -75,6 +75,12 @@
 		26B3CE5B15ACB2EC00A8859D /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263F793D1593E44900AB09B8 /* PhoneGap.plist */; };
 		26B3CE5C15ACB2EC00A8859D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F793F1593E44900AB09B8 /* Settings.bundle */; };
 		26B3CE5D15ACB2EC00A8859D /* PhoneGapResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */; };
+		26E249DA15AE364700B2BA60 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E249D615AE364700B2BA60 /* libTestFlight.a */; };
+		26E249DB15AE364700B2BA60 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E249D615AE364700B2BA60 /* libTestFlight.a */; };
+		26E249DC15AE364700B2BA60 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D715AE364700B2BA60 /* README.txt */; };
+		26E249DD15AE364700B2BA60 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D715AE364700B2BA60 /* README.txt */; };
+		26E249DE15AE364700B2BA60 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D815AE364700B2BA60 /* release_notes.txt */; };
+		26E249DF15AE364700B2BA60 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D815AE364700B2BA60 /* release_notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +143,10 @@
 		263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PhoneGapResources.bundle; sourceTree = "<group>"; };
 		26B3CE6315ACB2EC00A8859D /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B3CE7A15ACCE9200A8859D /* Contact-Viewer-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contact-Viewer-iOS-Info.plist"; sourceTree = "<group>"; };
+		26E249D615AE364700B2BA60 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		26E249D715AE364700B2BA60 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		26E249D815AE364700B2BA60 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		26E249D915AE364700B2BA60 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +171,7 @@
 				263F78F51593E44700AB09B8 /* SystemConfiguration.framework in Frameworks */,
 				263F791E1593E44900AB09B8 /* SalesforceHybridSDK.framework in Frameworks */,
 				263F79201593E44900AB09B8 /* libz.dylib in Frameworks */,
+				26E249DB15AE364700B2BA60 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +196,7 @@
 				26B3CE4B15ACB2EC00A8859D /* SystemConfiguration.framework in Frameworks */,
 				26B3CE4C15ACB2EC00A8859D /* SalesforceHybridSDK.framework in Frameworks */,
 				26B3CE4D15ACB2EC00A8859D /* libz.dylib in Frameworks */,
+				26E249DA15AE364700B2BA60 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				263F78F61593E44700AB09B8 /* Contact-Viewer-iOS */,
+				26E249D515AE364700B2BA60 /* TestFlightSDK1.0 */,
 				263F78D71593E44700AB09B8 /* Frameworks */,
 				263F78D51593E44700AB09B8 /* Products */,
 			);
@@ -307,6 +320,17 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
+		26E249D515AE364700B2BA60 /* TestFlightSDK1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				26E249D615AE364700B2BA60 /* libTestFlight.a */,
+				26E249D715AE364700B2BA60 /* README.txt */,
+				26E249D815AE364700B2BA60 /* release_notes.txt */,
+				26E249D915AE364700B2BA60 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1.0;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,6 +418,8 @@
 				263F793E1593E44900AB09B8 /* PhoneGap.plist in Resources */,
 				263F79401593E44900AB09B8 /* Settings.bundle in Resources */,
 				263F79421593E44A00AB09B8 /* PhoneGapResources.bundle in Resources */,
+				26E249DD15AE364700B2BA60 /* README.txt in Resources */,
+				26E249DF15AE364700B2BA60 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +442,8 @@
 				26B3CE5B15ACB2EC00A8859D /* PhoneGap.plist in Resources */,
 				26B3CE5C15ACB2EC00A8859D /* Settings.bundle in Resources */,
 				26B3CE5D15ACB2EC00A8859D /* PhoneGapResources.bundle in Resources */,
+				26E249DC15AE364700B2BA60 /* README.txt in Resources */,
+				26E249DE15AE364700B2BA60 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +560,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact-Viewer-iOS/Contact-Viewer-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Contact-Viewer-iOS/Contact-Viewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.0\"",
+				);
 				PRODUCT_NAME = Contacts;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -549,6 +581,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact-Viewer-iOS/Contact-Viewer-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Contact-Viewer-iOS/Contact-Viewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.0\"",
+				);
 				PRODUCT_NAME = Contacts;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -566,6 +602,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact-Viewer-iOS/Contact-Viewer-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Contact-Viewer-iOS/Contact-Viewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.0\"",
+				);
 				PRODUCT_NAME = Contacts;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -583,6 +623,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Contact-Viewer-iOS/Contact-Viewer-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Contact-Viewer-iOS/Contact-Viewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK1.0\"",
+				);
 				PRODUCT_NAME = Contacts;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
