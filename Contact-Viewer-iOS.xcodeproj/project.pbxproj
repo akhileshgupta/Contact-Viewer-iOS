@@ -35,9 +35,7 @@
 		263F792F1593E44900AB09B8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F792E1593E44900AB09B8 /* Default.png */; };
 		263F79311593E44900AB09B8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F79301593E44900AB09B8 /* Default@2x.png */; };
 		263F79331593E44900AB09B8 /* Default~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F79321593E44900AB09B8 /* Default~iPad.png */; };
-		263F79351593E44900AB09B8 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 263F79341593E44900AB09B8 /* readme.md */; };
 		263F79391593E44900AB09B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F79381593E44900AB09B8 /* AppDelegate.m */; };
-		263F793C1593E44900AB09B8 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 263F793B1593E44900AB09B8 /* README */; };
 		263F793E1593E44900AB09B8 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263F793D1593E44900AB09B8 /* PhoneGap.plist */; };
 		263F79401593E44900AB09B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F793F1593E44900AB09B8 /* Settings.bundle */; };
 		263F79421593E44A00AB09B8 /* PhoneGapResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */; };
@@ -70,17 +68,11 @@
 		26B3CE5615ACB2EC00A8859D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F792E1593E44900AB09B8 /* Default.png */; };
 		26B3CE5715ACB2EC00A8859D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F79301593E44900AB09B8 /* Default@2x.png */; };
 		26B3CE5815ACB2EC00A8859D /* Default~iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 263F79321593E44900AB09B8 /* Default~iPad.png */; };
-		26B3CE5915ACB2EC00A8859D /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 263F79341593E44900AB09B8 /* readme.md */; };
-		26B3CE5A15ACB2EC00A8859D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 263F793B1593E44900AB09B8 /* README */; };
 		26B3CE5B15ACB2EC00A8859D /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263F793D1593E44900AB09B8 /* PhoneGap.plist */; };
 		26B3CE5C15ACB2EC00A8859D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F793F1593E44900AB09B8 /* Settings.bundle */; };
 		26B3CE5D15ACB2EC00A8859D /* PhoneGapResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */; };
 		26E249DA15AE364700B2BA60 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E249D615AE364700B2BA60 /* libTestFlight.a */; };
 		26E249DB15AE364700B2BA60 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E249D615AE364700B2BA60 /* libTestFlight.a */; };
-		26E249DC15AE364700B2BA60 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D715AE364700B2BA60 /* README.txt */; };
-		26E249DD15AE364700B2BA60 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D715AE364700B2BA60 /* README.txt */; };
-		26E249DE15AE364700B2BA60 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D815AE364700B2BA60 /* release_notes.txt */; };
-		26E249DF15AE364700B2BA60 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26E249D815AE364700B2BA60 /* release_notes.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,10 +126,8 @@
 		263F792E1593E44900AB09B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/splash/Default.png; sourceTree = "<group>"; };
 		263F79301593E44900AB09B8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		263F79321593E44900AB09B8 /* Default~iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iPad.png"; path = "Resources/splash/Default~iPad.png"; sourceTree = "<group>"; };
-		263F79341593E44900AB09B8 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		263F79371593E44900AB09B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		263F79381593E44900AB09B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		263F793B1593E44900AB09B8 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		263F793D1593E44900AB09B8 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
 		263F793F1593E44900AB09B8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PhoneGapResources.bundle; sourceTree = "<group>"; };
@@ -249,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				263F791F1593E44900AB09B8 /* libz.dylib */,
-				263F79341593E44900AB09B8 /* readme.md */,
 				263F793F1593E44900AB09B8 /* Settings.bundle */,
 				263F79411593E44A00AB09B8 /* PhoneGapResources.bundle */,
 				263F79211593E44900AB09B8 /* Resources */,
@@ -315,7 +304,6 @@
 		263F793A1593E44900AB09B8 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				263F793B1593E44900AB09B8 /* README */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -413,13 +401,9 @@
 				263F792F1593E44900AB09B8 /* Default.png in Resources */,
 				263F79311593E44900AB09B8 /* Default@2x.png in Resources */,
 				263F79331593E44900AB09B8 /* Default~iPad.png in Resources */,
-				263F79351593E44900AB09B8 /* readme.md in Resources */,
-				263F793C1593E44900AB09B8 /* README in Resources */,
 				263F793E1593E44900AB09B8 /* PhoneGap.plist in Resources */,
 				263F79401593E44900AB09B8 /* Settings.bundle in Resources */,
 				263F79421593E44A00AB09B8 /* PhoneGapResources.bundle in Resources */,
-				26E249DD15AE364700B2BA60 /* README.txt in Resources */,
-				26E249DF15AE364700B2BA60 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +421,9 @@
 				26B3CE5615ACB2EC00A8859D /* Default.png in Resources */,
 				26B3CE5715ACB2EC00A8859D /* Default@2x.png in Resources */,
 				26B3CE5815ACB2EC00A8859D /* Default~iPad.png in Resources */,
-				26B3CE5915ACB2EC00A8859D /* readme.md in Resources */,
-				26B3CE5A15ACB2EC00A8859D /* README in Resources */,
 				26B3CE5B15ACB2EC00A8859D /* PhoneGap.plist in Resources */,
 				26B3CE5C15ACB2EC00A8859D /* Settings.bundle in Resources */,
 				26B3CE5D15ACB2EC00A8859D /* PhoneGapResources.bundle in Resources */,
-				26E249DC15AE364700B2BA60 /* README.txt in Resources */,
-				26E249DE15AE364700B2BA60 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

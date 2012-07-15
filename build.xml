@@ -29,15 +29,17 @@
         <exec executable="/usr/libexec/PlistBuddy">
           <arg value="-c"/>
           <arg value="Delete :Plugins:com.phonegap.debugconsolen"/>
-          <arg value="Contact-Viewer-iOS/PhoneGap.plist"/>
+          <arg value="${project.name}/PhoneGap.plist"/>
         </exec> 
     </target>
 
     <target name="replaceTokens">
-        <replace file="${project.dir}/${project.name}/Classes/AppDelegate.m"
-                 summary="true"
+        <replace dir="${project.dir}" summary="true"
                  token="${TEST_FLIGHT_TOKEN}"
-                 value="${testFlightToken}"/>
+                 value="${testFlightToken}">
+            <include name="${project.name}/Classes/AppDelegate.m"/>
+            <include name="${project.name}/PhoneGap.plist"/>
+        </replace>
     </target>
 
     <!-- compile -->

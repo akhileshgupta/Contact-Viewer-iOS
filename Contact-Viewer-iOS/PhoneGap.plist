@@ -18,41 +18,24 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
-		<string>maps.google.com</string>
+		<string>webapp.secure.force.com</string>
 		<string>maps.googleapis.com</string>
-		<string>*.force.com</string>
-		<string>*.salesforce.com</string>
+		<string>login.salesforce.com</string>
+		<string>*.my.salesforce.com</string>
+		<string>na*.salesforce.com</string>
+		<string>eu*.salesforce.com</string>
+		<string>cs*.salesforce.com</string>
+		<string>ap*.salesforce.com</string>
+		<string>${TEST_FLIGHT_TOKEN}.sdk.testflightapp.com</string>
 	</array>
 	<key>Plugins</key>
 	<dict>
 		<key>com.salesforce.oauth</key>
 		<string>SalesforceOAuthPlugin</string>
-		<key>com.salesforce.smartstore</key>
-		<string>SFSmartStorePlugin</string>
-		<key>com.phonegap.accelerometer</key>
-		<string>PGAccelerometer</string>
 		<key>com.phonegap.camera</key>
 		<string>PGCamera</string>
 		<key>com.phonegap.connection</key>
 		<string>PGConnection</string>
-		<key>com.phonegap.contacts</key>
-		<string>PGContacts</string>
-		<key>com.phonegap.debugconsole</key>
-		<string>PGDebugConsole</string>
-		<key>com.phonegap.file</key>
-		<string>PGFile</string>
-		<key>com.phonegap.filetransfer</key>
-		<string>PGFileTransfer</string>
-		<key>com.phonegap.geolocation</key>
-		<string>PGLocation</string>
-		<key>com.phonegap.notification</key>
-		<string>PGNotification</string>
-		<key>com.phonegap.media</key>
-		<string>PGSound</string>
-		<key>com.phonegap.mediacapture</key>
-		<string>PGCapture</string>
-		<key>com.phonegap.splashscreen</key>
-		<string>PGSplashScreen</string>
 	</dict>
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<true/>
