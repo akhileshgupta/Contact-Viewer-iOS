@@ -21,6 +21,7 @@
 		<string>webapp.secure.force.com</string>
 		<string>maps.googleapis.com</string>
 		<string>login.salesforce.com</string>
+		<string>*.content.force.com</string>
 		<string>*.my.salesforce.com</string>
 		<string>na*.salesforce.com</string>
 		<string>eu*.salesforce.com</string>
