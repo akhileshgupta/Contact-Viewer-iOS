@@ -36,6 +36,8 @@
 		<string>PGCamera</string>
 		<key>com.phonegap.connection</key>
 		<string>PGConnection</string>
+		<key>com.phonegap.debugconsole</key>
+		<string>PGDebugConsole</string>
 	</dict>
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<true/>

@@ -28,7 +28,7 @@
     <target name="disableLogging">
         <exec executable="/usr/libexec/PlistBuddy">
           <arg value="-c"/>
-          <arg value="Delete :Plugins:com.phonegap.debugconsolen"/>
+          <arg value="Delete :Plugins:com.phonegap.debugconsole"/>
           <arg value="${project.name}/PhoneGap.plist"/>
         </exec> 
     </target>
