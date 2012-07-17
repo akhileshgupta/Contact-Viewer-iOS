@@ -19,7 +19,6 @@
 	<key>ExternalHosts</key>
 	<array>
 		<string>webapp.secure.force.com</string>
-		<string>maps.googleapis.com</string>
 		<string>login.salesforce.com</string>
 		<string>*.content.force.com</string>
 		<string>*.my.salesforce.com</string>
@@ -27,6 +26,8 @@
 		<string>eu*.salesforce.com</string>
 		<string>cs*.salesforce.com</string>
 		<string>ap*.salesforce.com</string>
+		<string>maps.googleapis.com</string>
+		<string>analytics.localytics.com</string>
 		<string>${TEST_FLIGHT_TOKEN}.sdk.testflightapp.com</string>
 	</array>
 	<key>Plugins</key>
