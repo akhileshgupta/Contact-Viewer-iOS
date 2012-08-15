@@ -1,4 +1,4 @@
-<project name="Contact-Viewer">
+<project name="Contact-Viewer" default="generateIPA">
    
     <property name="project.dir" value="${basedir}" />
     <property name="project.name" value="Contact-Viewer-iOS" />
@@ -12,25 +12,24 @@
     <property name="embedProfile" value="${env.cvEmbedProfile}"/>
     <property name="testFlightToken" value="${env.cvTestFlightToken}"/>
     
-    <target name="all">
-        <antcall target="clean"/>
-        <antcall target="disableLogging"/>
-        <antcall target="replaceTokens"/>
-        <antcall target="xcodebuild"/>
-        <antcall target="generateIPA"/>
-    </target>
-
     <!-- clean -->
     <target name="clean">
         <delete dir="artifacts"/>
     </target>
 
-    <target name="disableLogging">
+    <target name="updatPlist">
+        <!-- Disable logging -->
         <exec executable="/usr/libexec/PlistBuddy">
           <arg value="-c"/>
           <arg value="Delete :Plugins:com.phonegap.debugconsole"/>
           <arg value="${project.name}/PhoneGap.plist"/>
         </exec> 
+        <!-- Update the build number -->
+        <exec executable="/usr/libexec/PlistBuddy">
+          <arg value="-c"/>
+          <arg value="Set CFBundleVersion #${env.BUILD_NUMBER}"/>
+          <arg value="${project.name}/${project.name}-Info.plist"/>
+        </exec>
     </target>
 
     <target name="replaceTokens">
@@ -43,7 +42,7 @@
     </target>
 
     <!-- compile -->
-    <target name="xcodebuild">
+    <target name="xcodebuild" depends="updatPlist,replaceTokens">
         <property name="action" value="build"/>
         <echo>${action}ing ${project.name} for SDK ${sdk}</echo>
 
@@ -52,7 +51,7 @@
         </exec>
     </target>
 
-    <target name="generateIPA" description="Generate the IPA file after building" >
+    <target name="generateIPA" description="Generate the IPA file after building" depends="xcodebuild">
         <copy file="${user.home}/Library/MobileDevice/Provisioning Profiles/${embedProfile}" todir="${basedir}"/>
         
         <exec executable="xcrun" failOnError="true">
