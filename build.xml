@@ -60,6 +60,7 @@
             <arg line="-o &quot;${install_path}/Contact-Viewer.ipa&quot; "  />
             <arg line="--sign &quot;iPhone Distribution&quot;" />
             <arg line="--embed &quot;${basedir}/${embedProfile}&quot; " />
+            <arg line="-arch &quot;armv6 armv7&quot;" />
         </exec>
     </target>
 
