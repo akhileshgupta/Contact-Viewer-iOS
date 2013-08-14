@@ -47,7 +47,7 @@
         <echo>${action}ing ${project.name} for SDK ${sdk}</echo>
 
         <exec executable="xcodebuild" failonerror="true" logError="true">
-            <arg line="-project ${project.dir}/${project.name}.xcodeproj -target ${target.release} -configuration ${configuration} -sdk ${sdk} INSTALL_ROOT=${install_path} ${action}"/>
+            <arg line="-project ${project.dir}/${project.name}.xcodeproj -target ${target.release} -configuration ${configuration} -sdk ${sdk} INSTALL_ROOT=${install_path} clean ${action}"/>
         </exec>
     </target>
 
